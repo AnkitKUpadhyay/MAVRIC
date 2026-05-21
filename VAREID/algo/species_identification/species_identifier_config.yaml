@@ -1,0 +1,14 @@
+bioclip_dirname: BioCLIP/
+
+org_predict_file: src/bioclip/predict.py
+new_predict_file: algo/predict.py
+
+custom_labels:
+  - "grevy's zebra"
+  - "plains zebra"
+  - "reticulated giraffe"
+  - "masai giraffe"
+  - "neither"
+
+
+confidence_threshold: 0.75

@@ -1,0 +1,17 @@
+id: MAVRIC-video-pipeline
+name: MAVRIC Video Pipeline
+status: AlphaRelease
+description: Video-only animal re-identification pipeline extracted from Imageomics/MAVRIC.
+owner: Ankit Kumar Upadhyay
+primaryThrust: useInspired/AE
+sourceCodeUrl: https://github.com/AnkitKUpadhyay/mavric-video-pipeline
+targetIcicleRelease: 2025-08
+componentVersion: v0.1.0
+licenseUrl:
+citation: "Aidan Westphal, Ankit Kumar Upadhyay, Ekaterina Nepovinnykh, Lawrence Miao, Jaeseok Kang, S M Rayeed, Julian M Bain, Charles V Stewart. Animal Re-Identification via Multiview Spatio-Temporal Track Clustering."
+codeReviewConducted: false
+testsWritten: false
+usageDocumentationAvailable: true
+developerDocumentationAvailable: false
+trainingTutorialsAvailable: false
+publicAccess: true

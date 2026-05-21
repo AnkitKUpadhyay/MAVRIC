@@ -1,0 +1,69 @@
+# Video pipeline configuration.
+
+# Required paths.
+data_dir_out: ~
+data_dir_in: ~
+data_video: True
+
+# Shared directories.
+log_dirname: "logs"
+image_dirname: "images"
+model_dirname: "VAREID/models"
+
+# Video import.
+video_out_file: "video_data.json"
+import_logfile: "import.txt"
+
+# Detection and tracking.
+dt_dirname: "detector"
+dt_model: "yolov9c.pt"
+dt_logfile: "detector.txt"
+dt_video_out_file: "vid_annots.json"
+
+# Species identification.
+si_dirname: "species_identifier"
+si_out_file: "si_annots.json"
+si_logfile: "species_identifier.txt"
+
+# Viewpoint classification.
+vc_dirname: "viewpoint_classifier"
+vc_model: "plains_grevys_VC_june_25_tf_efficientnet_b4_ns_9.pth"
+vc_out_file: "vc_annots.json"
+vc_logfile: "viewpoint_classifier.txt"
+
+# Identifiable annotation classification.
+ia_dirname: "ia_classifier"
+ia_model: "best_june_24_2025_IA_classifier_016.pth"
+ia_out_file: "ia_annots.json"
+ia_filtered_out_file: "ia_filtered_annots.json"
+ia_logfile: "ia_classify_and_filter.txt"
+
+# Frame sampling.
+fs_dirname: "frame_sampling"
+fs_out_file: "fs_annots.json"
+fs_logfile: "frame_sampling.txt"
+fs_stage1_out_file: "stage1_fs_annots.json"
+
+# Miew-ID embeddings.
+mid_dirname: "miew_id"
+mid_model: "conservationxlabs/miewid-msv3"
+mid_out_file: "miewid_embeddings.pickle"
+mid_logfile: "miew_id.txt"
+
+# LCA.
+lca_dirname: "lca"
+lca_verifiers_probs: "verifiers_probs.json"
+lca_subunit_logfile: "lca_algorithm.txt"
+lca_logfile: "lca.txt"
+lca_separate_viewpoints: True
+lca_out_prefix: "lca"
+lca_out_suffix: "annots"
+
+# Postprocessing.
+post_dirname: "post"
+post_db_file: "post_ui_decision_db.db"
+post_left_out_file: "post_left_annots.json"
+post_right_out_file: "post_right_annots.json"
+post_logfile: "post.txt"
+gui_logfile: "gui.txt"
+interaction_mode: "database"

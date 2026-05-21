@@ -1,0 +1,10 @@
+name: mavric-video-pipeline
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python==3.11
+  - pip
+  - snakemake-minimal>=8.4.4
+  - pip:
+      - -e .[species]
