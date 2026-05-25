@@ -258,10 +258,10 @@ def main(args):
     video_data = load_json(args.video_data)
     os.makedirs(dt_dir, exist_ok=True)
 
-    threshold = config["confidence_threshold"]         # 0.45 — tracker sees this
+    threshold = config["confidence_threshold"]         # 0.1 — tracker sees this
     save_threshold = config.get("save_threshold", threshold)  # 0.75 — saved to JSON
     sz = config["img_size_vid"]
-    tracker_config = config.get("tracker", "bytetrack.yaml")
+    tracker_config = path_from_file(__file__, config.get("tracker", "bytetrack.yaml"))
 
     print(f"Using tracker: {tracker_config}")
     print(f"Tracking threshold: {threshold}")

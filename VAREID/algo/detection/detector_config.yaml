@@ -7,7 +7,7 @@
 # Detector Configuration
 
 # Detection parameters
-confidence_threshold: 0.45
+confidence_threshold: 0.1
 save_threshold: 0.75
 
 # Video processing
@@ -20,4 +20,4 @@ img_size_img: 320
 
 # Tracker selection
 # Options: "bytetrack.yaml", "botsort.yaml", or path to custom config
-tracker: "bytetrack.yaml"    # NEW: Use BoT-SORT instead of ByteTrack
+tracker: "bytetrack.yaml"    # Use custom ByteTrack settings from this directory

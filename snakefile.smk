@@ -17,7 +17,7 @@ rule all:
 
 rule import_videos:
     input:
-        directory(config["data_dir_in"])
+        config["data_dir_in"]
     output:
         config["video_out_path"]
     shell:
